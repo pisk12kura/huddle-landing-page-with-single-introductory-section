@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --backgroundcolor: hsl(257, 40%, 49%);
+    --headingonecolor: white;
+    --desccolor: white;
+    --registercolor: hsl(257, 40%, 49%);
+    --registerbgcolor: white;
+}
+
+/*main*/
+
+body {
+    background-color: var(--backgroundcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+}
+
+main {
+    display: flex; 
+}
+
+/*left*/
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*right*/
+
+.right {
+    position: relative;
+    top: 10rem;
+    left: 3.5rem;
+}
+
+.huddle {
+    display: flex;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    width: 500px;
+    font-size: 40px;
+    font-family: "Poppins";
+    color: var(--headingonecolor);
+    border: 0px solid;
+    
+}
+
+.desc {
+    width: 520px;
+    border: 0px solid;
+    font-family: "Open Sans";
+    font-size: 18px;
+    color: var(--desccolor);
+}
+
+.register {
+    width: 200px;
+    height: 60px;
+    color: var(--registercolor);
+    background-color: var(--registerbgcolor);
+    font-family: "Open Sans";
+    font-size: 20px;
+    border: 0px solid;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    box-shadow: 0.1px 20px 50px 0.5px rgb(46, 46, 46);
+}
+
+.register a {
+    width: 200px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0px solid;
+    border-radius: 5rem;
+}
+
+.register:hover,
+.register:active {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.register a:hover,
+.register a:active {
+    position: relative;
+    top: 3px;
+    color: white;
+}
+
+/*icons*/
+
+.icons {
+    position: relative;
+    left: 21rem;
+    top: 10rem;
+}
+
+.icons a i {
+    color: white;
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.icons a i:hover,
+.icons a i:active {
+    color: hsl(300, 69%, 71%);
+}
+
+/*attribution*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: white; 
+}
+
+.attribution a:hover,
+.attribution a:active {
+    color: black;
+}
+
+
+
+
+
